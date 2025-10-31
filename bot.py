@@ -25,11 +25,11 @@ from aiogram.filters import CommandStart, Command, CommandObject
 # Ешқашан тікелей кодқа токен жазбаңыз — орта айнымалы арқылы орнатыңыз.
 MIN_AMOUNT_XTR = 1
 MAX_AMOUNT_XTR = 10000
-BOT_TOKEN = os.getenv("BOT_TOKEN", "BOT_TOKEN_HERE")
-PROVIDER_TOKEN = os.getenv("PROVIDER_TOKEN", "")  # Telegram payment provider token (Stars үшін бос болуы мүмкін)
-ADMIN_ID = int(os.getenv("ADMIN_ID", "ID_HERE"))  # әкімшінің Telegram ID (оқшауланған ортада орнатыңыз)
-CURRENCY = os.getenv("CURRENCY", "XTR")  # Валюта (Stars = XTR)
-DB_PATH = os.getenv("DB_PATH", "payments.db")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+PROVIDER_TOKEN = os.getenv("PROVIDER_TOKEN")  # Telegram payment provider token (Stars үшін бос болуы мүмкін)
+ADMIN_ID = int(os.getenv("ADMIN_ID"))  # әкімшінің Telegram ID (оқшауланған ортада орнатыңыз)
+CURRENCY = os.getenv("CURRENCY")  # Валюта (Stars = XTR)
+DB_PATH = os.getenv("DB_PATH")
 
 # ------------------ Aiogram init ------------------
 load_dotenv()
