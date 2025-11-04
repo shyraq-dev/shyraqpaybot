@@ -23,6 +23,8 @@ from aiogram.filters import CommandStart, Command, CommandObject
 
 # ------------------ Бағдарламалық баптаулар (ORTA / ENV арқылы беріледі) ------------------
 # Ешқашан тікелей кодқа токен жазбаңыз — орта айнымалы арқылы орнатыңыз.
+load_dotenv()
+
 MIN_AMOUNT_XTR = 1
 MAX_AMOUNT_XTR = 10000
 BOT_TOKEN = os.getenv("BOT_TOKEN")
